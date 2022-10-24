@@ -11,6 +11,15 @@
     <option name="cloneParentDir" value="$USER_HOME$/Downloads/Test Automation" />
   </component>
   <component name="Vcs.Log.App.Settings">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Subject" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
     <option name="CUSTOM_BOOLEAN_PROPERTIES">
       <map>
         <entry key="Change.Log.Filter.on.Branch.Selection" value="false" />
