@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Notification MS Regression Test]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Listeners.ExtentReport"/>
+    <listener class-name="Listeners.AllureListener"/>
+    <listener class-name="Listeners.RetryListener"/>
+  </listeners>
+  <test thread-count="5" name="Add SMS Template(failed)" verbose="0">
+    <classes>
+      <class name="Notifiction_MS.Add_SMS_Template">
+        <methods>
+          <include name="setUpConfiguration"/>
+          <include name="Add_New_SMS_Template_Invalid_Authorization"/>
+          <include name="Waiter"/>
+        </methods>
+      </class> <!-- Notifiction_MS.Add_SMS_Template -->
+    </classes>
+  </test> <!-- Add SMS Template(failed) -->
+  <test thread-count="5" name="Get All SMS Template(failed)" verbose="0">
+    <classes>
+      <class name="Notifiction_MS.Get_all_SMS_Template">
+        <methods>
+          <include name="setUpConfiguration"/>
+          <include name="Get_All_SMS_Template_Invalid_Authorization"/>
+          <include name="Waiter"/>
+        </methods>
+      </class> <!-- Notifiction_MS.Get_all_SMS_Template -->
+    </classes>
+  </test> <!-- Get All SMS Template(failed) -->
+  <test thread-count="5" name="Send Static SMS Template(failed)" verbose="0">
+    <classes>
+      <class name="Notifiction_MS.Send_Static_SMS_Message">
+        <methods>
+          <include name="setUpConfiguration"/>
+          <include name="Send_SMS_Ubauthorized_User"/>
+          <include name="Send_SMS_Template_Single_Number"/>
+          <include name="Send_SMS_Template_Multiple_Numbers"/>
+          <include name="Waiter"/>
+        </methods>
+      </class> <!-- Notifiction_MS.Send_Static_SMS_Message -->
+    </classes>
+  </test> <!-- Send Static SMS Template(failed) -->
+  <test thread-count="5" name="Send Dynamic SMS Template(failed)" verbose="0">
+    <classes>
+      <class name="Notifiction_MS.Send_Dynamic_SMS">
+        <methods>
+          <include name="Send_Dynamic_SMS_Template_Single_Number"/>
+          <include name="setUpConfiguration"/>
+          <include name="Send_Dynamic_SMS_Multiple_Numbers"/>
+          <include name="Waiter"/>
+        </methods>
+      </class> <!-- Notifiction_MS.Send_Dynamic_SMS -->
+    </classes>
+  </test> <!-- Send Dynamic SMS Template(failed) -->
+  <test thread-count="5" name="Update SMS Template(failed)" verbose="0">
+    <classes>
+      <class name="Notifiction_MS.Update_SMS_Template">
+        <methods>
+          <include name="setUpConfiguration"/>
+          <include name="Update_SMS_Template"/>
+          <include name="Waiter"/>
+        </methods>
+      </class> <!-- Notifiction_MS.Update_SMS_Template -->
+    </classes>
+  </test> <!-- Update SMS Template(failed) -->
+  <test thread-count="5" name="Delete SMS Template(failed)" verbose="0">
+    <classes>
+      <class name="Notifiction_MS.Delete_SMS_Template">
+        <methods>
+          <include name="setUpConfiguration"/>
+          <include name="Delete_SMS_Template_Unauthorized_User"/>
+          <include name="Waiter"/>
+        </methods>
+      </class> <!-- Notifiction_MS.Delete_SMS_Template -->
+    </classes>
+  </test> <!-- Delete SMS Template(failed) -->
+</suite> <!-- Failed suite [Notification MS Regression Test] -->

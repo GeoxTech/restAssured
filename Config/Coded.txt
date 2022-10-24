@@ -1,0 +1,19 @@
+new Faker().name().firstName()
+System.out.println(new Faker().phoneNumber().subscriberNumber(11));;
+System.out.println(new Faker().internet().emailAddress());
+allure serve C:\Users\ennym\IdeaProjects\main_backend_api_test\allure-results
+assertThat(string, is(not(emptyString())));
+TimeUnit.MINUTES.sleep(5)
+https://sandbox.interswitchng.com/docbase/docs/arbiter/arbiter-2-0/create-dispute/
+List<Integer> numbers = JsonPath.from(jsonStringg).getList("data.id", Integer.class);
+        assertThat(numbers, hasItems(29, 28));
+
+C:\Users\ennym\IdeaProjects\main_backend_api_test\allure-results
+
+body("data.first_name", hasItems("Michael","Lindsay")).
+
+
+
+
+
+-

@@ -1,0 +1,72 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 26, Failures: 9, Errors: 0, Skipped: 9, Time elapsed: 57.588 sec <<< FAILURE! - in TestSuite
+Add_New_SMS_Template_Invalid_Authorization(Notifiction_MS.Add_SMS_Template)  Time elapsed: 0.8 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected content-type "JSON" doesn't match actual content-type "text/plain".
+
+	at Notifiction_MS.Add_SMS_Template.Add_New_SMS_Template_Invalid_Authorization(Add_SMS_Template.java:79)
+
+Get_All_SMS_Template_Invalid_Authorization(Notifiction_MS.Get_all_SMS_Template)  Time elapsed: 0.673 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected content-type "JSON" doesn't match actual content-type "text/plain".
+
+	at Notifiction_MS.Get_all_SMS_Template.Get_All_SMS_Template_Invalid_Authorization(Get_all_SMS_Template.java:32)
+
+Send_SMS_Template_Single_Number(Notifiction_MS.Send_Static_SMS_Message)  Time elapsed: 2.039 sec  <<< FAILURE!
+java.lang.AssertionError: 
+2 expectations failed.
+Expected status code <200> but was <500>.
+
+Expected status line "HTTP/1.1 200 OK" doesn't match actual status line "HTTP/1.1 500 Internal Server Error".
+
+	at Notifiction_MS.Send_Static_SMS_Message.Send_SMS_Template_Single_Number(Send_Static_SMS_Message.java:30)
+
+Send_SMS_Template_Multiple_Numbers(Notifiction_MS.Send_Static_SMS_Message)  Time elapsed: 1.958 sec  <<< FAILURE!
+java.lang.AssertionError: 
+2 expectations failed.
+Expected status code <200> but was <500>.
+
+Expected status line "HTTP/1.1 200 OK" doesn't match actual status line "HTTP/1.1 500 Internal Server Error".
+
+	at Notifiction_MS.Send_Static_SMS_Message.Send_SMS_Template_Multiple_Numbers(Send_Static_SMS_Message.java:50)
+
+Send_SMS_Ubauthorized_User(Notifiction_MS.Send_Static_SMS_Message)  Time elapsed: 0.737 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected content-type "JSON" doesn't match actual content-type "text/plain".
+
+	at Notifiction_MS.Send_Static_SMS_Message.Send_SMS_Ubauthorized_User(Send_Static_SMS_Message.java:70)
+
+Send_Dynamic_SMS_Template_Single_Number(Notifiction_MS.Send_Dynamic_SMS)  Time elapsed: 1.993 sec  <<< FAILURE!
+java.lang.AssertionError: 
+2 expectations failed.
+Expected status code <200> but was <500>.
+
+Expected status line "HTTP/1.1 200 OK" doesn't match actual status line "HTTP/1.1 500 Internal Server Error".
+
+	at Notifiction_MS.Send_Dynamic_SMS.Send_Dynamic_SMS_Template_Single_Number(Send_Dynamic_SMS.java:30)
+
+Send_Dynamic_SMS_Multiple_Numbers(Notifiction_MS.Send_Dynamic_SMS)  Time elapsed: 1.925 sec  <<< FAILURE!
+java.lang.AssertionError: 
+2 expectations failed.
+Expected status code <200> but was <500>.
+
+Expected status line "HTTP/1.1 200 OK" doesn't match actual status line "HTTP/1.1 500 Internal Server Error".
+
+	at Notifiction_MS.Send_Dynamic_SMS.Send_Dynamic_SMS_Multiple_Numbers(Send_Dynamic_SMS.java:50)
+
+Update_SMS_Template(Notifiction_MS.Update_SMS_Template)  Time elapsed: 1.928 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <success>
+	at Notifiction_MS.Update_SMS_Template.Update_SMS_Template(Update_SMS_Template.java:25)
+
+Delete_SMS_Template_Unauthorized_User(Notifiction_MS.Delete_SMS_Template)  Time elapsed: 0.725 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected content-type "JSON" doesn't match actual content-type "text/plain".
+
+	at Notifiction_MS.Delete_SMS_Template.Delete_SMS_Template_Unauthorized_User(Delete_SMS_Template.java:67)
+
