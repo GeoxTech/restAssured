@@ -1,45 +1,257 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Notification MS Regression Test">
+<suite name="All Test Suite">
     <listeners>
         <listener class-name="Listeners.ExtentReport"/>
         <listener class-name="Listeners.AllureListener"/>
         <listener class-name="Listeners.RetryListener"/>
     </listeners>
 
-    <test name="Add SMS Template" verbose="10">
+    <test verbose="2" preserve-order="true" name="/Users/reliancehealth/Downloads/Rest_Test/src/test/java/Provider_MS">
         <classes>
-            <class name="Notifiction_MS.Add_SMS_Template"/>
-        </classes>
-    </test>
-
-    <test name="Get All SMS Template" verbose="10">
-        <classes>
-            <class name="Notifiction_MS.Get_all_SMS_Template"/>
-        </classes>
-    </test>
-
-    <test name="Send Static SMS Template" verbose="10">
-        <classes>
-            <class name="Notifiction_MS.Send_Static_SMS_Message"/>
-        </classes>
-    </test>
-
-    <test name="Send Dynamic SMS Template" verbose="10">
-        <classes>
-            <class name="Notifiction_MS.Send_Dynamic_SMS"/>
-        </classes>
-    </test>
-
-    <test name="Update SMS Template" verbose="10">
-        <classes>
-            <class name="Notifiction_MS.Update_SMS_Template"/>
-        </classes>
-    </test>
-
-    <test name="Delete SMS Template" verbose="10">
-        <classes>
-            <class name="Notifiction_MS.Delete_SMS_Template"/>
+            <class name="Provider_MS.addressState.createAddressState">
+                <methods><include name="create_Address_State_valid"/></methods>
+            </class>
+            <class name="Provider_MS.addressState.getAddressState">
+                <methods><include name="getAddressState_valid"/></methods>
+            </class>
+            <class name="Provider_MS.addressState.getAllAddressStates">
+                <methods><include name="getAllAddressState_valid"/></methods>
+            </class>
+            <class name="Provider_MS.amountDebited.createAmountDebited">
+                <methods><include name="createAmountDebited_valid"/></methods>
+            </class>
+            <class name="Provider_MS.amountDebited.getAllAmountDebited">
+                <methods><include name="Get_All_Amount_Debited"/></methods>
+            </class>
+            <class name="Provider_MS.amountDebited.getAmountDebited">
+                <methods><include name="Get_Amount_Debited"/></methods>
+            </class>
+            <class name="Provider_MS.amountDeposited.createAmountDeposited">
+                <methods><include name="createAmountDeposited_valid"/></methods>
+            </class>
+            <class name="Provider_MS.amountDeposited.getAllAmountDepositeds">
+                <methods><include name="Get_Amount_deposited_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.amountDeposited.getAmountDeposited">
+                <methods><include name="Get_Amount_deposited_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.bankAccounts.getAllBankAccounts">
+                <methods><include name="Get_All_BankAccount_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.bankAccounts.getBankAccount">
+                <methods><include name="Get_BankAccount_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.bankType.createBankType">
+                <methods><include name="create_Bank_Type_valid"/></methods>
+            </class>
+            <class name="Provider_MS.bankType.getAllBankTypes">
+                <methods><include name="Get_All_BankType_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.bankType.getBankType">
+                <methods><include name="Get_BankType_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.banks.createBank">
+                <methods><include name="createBank_valid"/></methods>
+            </class>
+            <class name="Provider_MS.banks.getAllBanks">
+                <methods><include name="Get_All_Bank_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.banks.getBank">
+                <methods><include name="Get_Bank_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.countries.createCountry">
+                <methods><include name="createCountry_valid"/></methods>
+            </class>
+            <class name="Provider_MS.countries.getAllCountries">
+                <methods><include name="Get_All_Country_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.countries.getCountry">
+                <methods><include name="Get_CountryByID_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.facilityCategories.createFacilityCategory">
+                <methods><include name="createFacility_valid"/></methods>
+            </class>
+            <class name="Provider_MS.facilityCategories.getAllFacilityCategories">
+                <methods><include name="Get_All_Facilities_ByCategory_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.facilityCategories.getFacilityCategory">
+                <methods><include name="Get_Facility_ByCategory_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.facilties.createFacility">
+                <methods><include name="createFacility_valid"/></methods>
+            </class>
+            <class name="Provider_MS.facilties.getAllFacilities">
+                <methods><include name="Get_All_Facility_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.facilties.getFacility">
+                <methods><include name="Get_Facility_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.locations.createLocation">
+                <methods><include name="createLocation_valid"/></methods>
+            </class>
+            <class name="Provider_MS.locations.getAllLocations">
+                <methods><include name="Get_All_Location_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.locations.getLocation">
+                <methods><include name="Get_Location_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.medicalQualification.createMedicalQualifications">
+                <methods><include name="createMedicalQualification_valid"/></methods>
+            </class>
+            <class name="Provider_MS.medicalQualification.getAllMedicalQualifications">
+                <methods><include name="Get_All_Medical_Qualification_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.medicalQualification.getMedicalQualification">
+                <methods><include name="Get_Medical_QualificationBy_ID_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.operatingHours.createOperatingHour">
+                <methods><include name="createOperatingHour_valid"/></methods>
+            </class>
+            <class name="Provider_MS.operatingHours.getAllOperatingHours">
+                <methods><include name="Get_All_Opening_Hour_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.operatingHours.getOperatingHour">
+                <methods><include name="Get_Opening_Hour_ByID_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.pharmacy.getPharmacyByName">
+                <methods><include name="getPharmacyByname"/></methods>
+            </class>
+            <class name="Provider_MS.pharmacy.getPharmacyList">
+                <methods><include name="Get_All_pharmacy_list"/></methods>
+            </class>
+            <class name="Provider_MS.pharmacy.getexcludeBlacklistedPharmacy">
+                <methods><include name="Execlude_Blacklisted_Pharmacy"/></methods>
+            </class>
+            <class name="Provider_MS.phoneNumber.getAllPhoneNumbers">
+                <methods><include name="Get_All_PhoneNumber_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.phoneNumber.getPhoneNumber">
+                <methods><include name="Get_PhoneNumber_ByID_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.products.createProduct">
+                <methods><include name="createProduct_valid"/></methods>
+            </class>
+            <class name="Provider_MS.products.getAllProducts">
+                <methods><include name="Get_Product_ByID_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.products.getProduct">
+                <methods><include name="Get_Product_ByID_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerAdmin.createProviderAdmin">
+                <methods><include name="createProviderAdmin_valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerAdmin.getAllProviderAdmins">
+                <methods><include name="Get_AllProviderAdmin_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerAdmin.getProviderAdmin">
+                <methods><include name="Get_ProviderAdmin_ByID_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerAdmin.getProviderAdminByEmail">
+                <methods><include name="Get_ProviderAdmin_ByEmail_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerAdmin.updateProviderAdmin">
+                <methods><include name="UpdateProviderAdmin_Tier"/></methods>
+            </class>
+            <class name="Provider_MS.providerHospitalInformation.getAllProviderHospitalInformation">
+                <methods><include name="Get_ProviderHospitalInformation_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerHospitalInformation.getProviderHospitalInformation">
+                <methods><include name="Get_ProviderHospitalInformation_ByID_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerHospitalInformation.getProviderHospitalInformationByProviderId">
+                <methods><include name="Get_ProviderHospitalInformation_ByProviderId_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerImage.createProviderImage">
+                <methods><include name="createProviderImage_valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerImage.getAllProviderImages">
+                <methods><include name="Get_ProviderImage_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerImage.getProviderImage">
+                <methods><include name="Get_ProviderImage_ByID_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerImage.updateProviderImage">
+                <methods><include name="Update_ProviderImage"/></methods>
+            </class>
+            <class name="Provider_MS.providerMedicalStaff.getAllProviderMedicalStaffs">
+                <methods><include name="Get_ProviderMedicalStaff_ByID_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerMedicalStaff.getProviderMedicalStaff">
+                <methods><include name="Get_ProviderMedicalStaff_ByID_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerService.createProviderService">
+                <methods><include name="createProviderService_valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerService.getAllProviderServices">
+                <methods><include name="Get_ProductService_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerService.getProviderService">
+                <methods><include name="Get_ProductService_byId_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerService.updateProviderService">
+                <methods><include name="Update_Tier"/></methods>
+            </class>
+            <class name="Provider_MS.providerSpecialization.createProviderSpecialization">
+                <methods><include name="createProviderSpecialization_valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerSpecialization.getAllProviderSpecializations">
+                <methods><include name="Get_ProductSpecialization_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerSpecialization.getProviderSpecialization">
+                <methods><include name="Get_ProductSpecialization_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerSpecialization.updateProviderSpecialization">
+                <methods><include name="Update_ProviderSpecialization"/></methods>
+            </class>
+            <class name="Provider_MS.providerToProviderSpecilization.getAllProviderToProviderSpecializations">
+                <methods><include name="Get_All_ProductSpecialization_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerToProviderSpecilization.getProviderToProviderSpecialization">
+                <methods><include name="Get_ProductSpecialization_By_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providerToProviderSpecilization.getProviderToProviderSpecializationsByPID">
+                <methods><include name="Get_ProductSpecialization_ByProviderID_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providers.getAllProvidersByFilter">
+                <methods><include name="Get_Provider_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providers.getProvider">
+                <methods><include name="Get_Provider_ByID_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providers.getProviderByLegacyReference">
+                <methods><include name="Get_Provider_ByLegacyRef_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providers.getProviderStatus">
+                <methods><include name="Get_Provider_Status_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.providers.getProvidersByProductsRetailClient">
+                <methods><include name="Get_Provider_ByRetailClients_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.tiers.createTier">
+                <methods><include name="createTier_valid"/></methods>
+            </class>
+            <class name="Provider_MS.tiers.getAllTiers">
+                <methods><include name="Get_tiers_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.tiers.getTier">
+                <methods><include name="Get_tiers_ByID_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.tiers.updateTier">
+                <methods><include name="Update_Tier"/></methods>
+            </class>
+            <class name="Provider_MS.types.createType">
+                <methods><include name="createType_valid"/></methods>
+            </class>
+            <class name="Provider_MS.types.getAllTypes">
+                <methods><include name="Get_AllTypes_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.types.getType">
+                <methods><include name="Get_Types_ByID_Valid"/></methods>
+            </class>
+            <class name="Provider_MS.types.updateType">
+                <methods><include name="Update_Type"/></methods>
+            </class>
         </classes>
     </test>
 </suite>
